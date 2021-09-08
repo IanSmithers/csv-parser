@@ -1,0 +1,31 @@
+{
+  "costs": {
+    "A4": {
+      "singleSided": {
+        "bw": 0.15,
+        "colour": 0.25
+      },
+      "doubleSided": {
+        "bw": 0.10,
+        "colour": 0.20
+      }
+    },
+    "A3": {
+      "singleSided": {
+        "bw": 0.25,
+        "colour": 0.35
+      },
+      "doubleSided": {
+        "bw": 0.20,
+        "colour": 0.30
+      }
+    }
+  },
+  "headers": {
+    "totalPages": "Total Pages",
+    "colourPages": "Color Pages",
+    "doubleSided": "Double Sided",
+    "size": "Size"
+  },
+  "defaultPagesize": "A4"
+}

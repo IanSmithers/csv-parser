@@ -1,0 +1,65 @@
+{
+  "name": "papercut-challenge",
+  "version": "1.0.0",
+  "description": "Node Application for PaperCut coding challenge",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "buildAndRun": "tsc && node .",
+    "test": "jest",
+    "lint": "prettier --check src/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spoco2/papercut-challenge.git"
+  },
+  "keywords": [
+    "PaperCut",
+    "Node"
+  ],
+  "author": "Simon O'Connor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spoco2/papercut-challenge/issues"
+  },
+  "homepage": "https://github.com/spoco2/papercut-challenge#readme",
+  "dependencies": {
+    "@types/node": "^14.11.2",
+    "@types/pdfkit": "^0.10.6",
+    "csv-parser": "^2.3.3",
+    "pdfkit": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/interfaces/",
+      "<rootDir>/src/index.ts",
+      "/__tests__/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(__tests__/.*\\.test\\.ts)$"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
