@@ -1,5 +1,5 @@
 import FileService from "../FileService";
-import TestData from "./TestData";
+import TestData from "../../__tests__/TestData";
 
 describe("FileService", () => {
   it("readCSVToJSONArray: Should read and parse a csv to JSON", async () => {
@@ -8,5 +8,4 @@ describe("FileService", () => {
     const parsedCSV = await FileService.readCSVToJSONArray(TestData.ARG_ARRAY_WITH_PATH[2]);
     expect(parsedCSV).toEqual(TestData.PARSED_DEFAULT_CSV);
   });
-
 });

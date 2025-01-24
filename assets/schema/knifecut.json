@@ -1,0 +1,14 @@
+{
+  "client": "knifecut",
+  "headers": {
+    "pagesTotal": "Total Pages",
+    "colourTotal": "Color Pages",
+    "duplex": "Double Sided",
+  },
+  "costs": {
+    "singleSidedColour": 0.5,
+    "singleSidedBw": 0.25,
+    "doubleSidedColour": 0.75,
+    "doubleSidedBw": 0.5
+  }
+}

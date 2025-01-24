@@ -5,7 +5,28 @@ export default class TestData {
     { "Total Pages": "502", "Color Pages": " 22", "Double Sided": " true" },
     { "Total Pages": "1", "Color Pages": " 0", "Double Sided": " false" },
   ];
-
+  
+  static DEFAULT_SCHEMA =
+      {
+        "client": "papercut",
+        "headers": {
+          "totalPages": "Total Pages",
+          "colourPages": "Color Pages",
+          "doubleSided": "Double Sided",
+          "size": "Size"
+        },
+        "costs": {
+          "singleSided": {
+            "bw": 0.15,
+            "colour": 0.25
+          },
+          "doubleSided": {
+            "bw": 0.1,
+            "colour": 0.2
+          }
+        }
+      };
+  
   static BAD_TOTAL = [{ "Total Pages": "25", "Color Pages": "40", "Double Sided": " false" }];
 
   static DEFAULT_RESULT = [
@@ -16,10 +37,10 @@ export default class TestData {
   ];
 
   static PARSED_DEFAULT_CSV = [
-    { "Color Pages": " 10", "Double Sided":"false", "Total Pages": "25" },
-    { "Color Pages": " 13", "Double Sided":"true", "Total Pages": "55" },
-    { "Color Pages": " 22", "Double Sided":"true", "Total Pages": "502" },
-    { "Color Pages": " 0", "Double Sided":"false", "Total Pages": "1" },
+    { "Color Pages": "10", "Double Sided":"false", "Total Pages": "25" },
+    { "Color Pages": "13", "Double Sided":"true", "Total Pages": "55" },
+    { "Color Pages": "22", "Double Sided":"true", "Total Pages": "502" },
+    { "Color Pages": "0", "Double Sided":"false", "Total Pages": "1" },
   ];
 
   static GOOD_RESULT = [
@@ -39,6 +60,20 @@ export default class TestData {
     },
   ];
 
+  static GOOD_SCHEMA_RESULT = {
+    client: "papercut",
+    headers: {
+      totalPages: "Total Pages",
+      colourPages: "Color Pages",
+      doubleSided: "Double Sided",
+      size: "Size"
+    },
+    costs: {
+      singleSided: { bw: 0.15, colour: 0.25 },
+      doubleSided: { bw: 0.1, colour: 0.2 }
+    }
+  };
+
   static ARG_ARRAY_NO_PATH = ["node", "folder-to-script"];
-  static ARG_ARRAY_WITH_PATH = ["node", "folder-to-script", "./assets/input/sample-1.csv"];
+  static ARG_ARRAY_WITH_PATH = ["node", "folder-to-script", "./assets/input/sample-1.csv", "papercut"];
 }

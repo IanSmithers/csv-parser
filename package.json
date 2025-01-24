@@ -24,17 +24,17 @@
   },
   "homepage": "https://github.com/spoco2/papercut-challenge#readme",
   "dependencies": {
-    "@types/node": "^14.11.2",
-    "@types/pdfkit": "^0.10.6",
     "csv-parser": "^2.3.3",
     "pdfkit": "^0.11.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
+    "@types/node": "^22.10.7",
+    "@types/pdfkit": "^0.13.8",
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
     "ts-jest": "^26.4.0",
-    "typescript": "^4.0.3"
+    "typescript": "^5.7.3"
   },
   "jest": {
     "preset": "ts-jest",

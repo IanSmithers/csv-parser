@@ -1,0 +1,19 @@
+{
+  "client": "papercut",
+  "headers": {
+    "totalPages": "Total Pages",
+    "colourPages": "Color Pages",
+    "doubleSided": "Double Sided",
+    "size": "Size"
+  },
+  "costs": {
+    "singleSided": {
+      "bw": 0.15,
+      "colour": 0.25
+    },
+    "doubleSided": {
+      "bw": 0.1,
+      "colour": 0.2
+    }
+  }
+}

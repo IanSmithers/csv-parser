@@ -1,4 +1,6 @@
 /.idea
+/**/*.pdf
+
 # dependencies
 /node_modules
 
